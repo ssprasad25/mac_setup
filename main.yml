@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  connection: local
+
+  vars_files:
+    - default.config.yml
+    - secret
+
+  roles:
+    - role: mac_mini_setup 
+      tags: ['mac']
+
+

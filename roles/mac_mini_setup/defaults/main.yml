@@ -1,0 +1,17 @@
+---
+# defaults file for mac_mini_setup
+
+homebrew_repo: https://github.com/Homebrew/brew
+
+homebrew_prefix: /usr/local
+homebrew_install_path: "{{ homebrew_prefix }}/Homebrew"
+homebrew_brew_bin_path: /usr/local/bin
+
+homebrew_installed_packages:
+  - ssh-copy-id
+  - pv
+
+homebrew_cask_appdir: /Applications
+
+npm_packages:
+  - react-native-cli
